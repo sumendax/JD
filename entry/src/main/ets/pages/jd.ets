@@ -49,6 +49,7 @@ struct jd {
           return true
         })
       }
+      .mode(NavigationMode.Stack)
       .hideTitleBar(true)
       .hideToolBar(true)
     }
