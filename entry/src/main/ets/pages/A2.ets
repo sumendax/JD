@@ -1,0 +1,124 @@
+@Entry
+@ComponentV2
+struct A2 {
+  build() {
+    Column(){
+      GridRow({
+        gutter:10,
+        columns:{
+          sm:4,
+          md:8,
+          lg:12,
+        },
+      }){
+        GridCol(){
+          Text('城市概况')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffcbcfe9')
+        .span({
+          sm:4,
+          md:8,
+          lg:12,
+        })
+        .order(0)
+
+        GridCol(){
+          Text('每小时天气')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffb0bbef')
+        .span({
+          sm:4,
+          md:8,
+          lg:8,
+        })
+        .order(1)
+
+        GridCol(){
+          Text('每日天气')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffcbcfe9')
+        .span(4)
+        .order({
+          sm:2,
+          md:2,
+          lg:3,
+        })
+
+        GridCol(){
+          Text('空气质量')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffcbcfe9')
+        .span(4)
+        .order({
+          sm:2,
+          md:3,
+          lg:2,
+        })
+
+        GridCol(){
+          Text('生活指数')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffb0bbef')
+        .span(4)
+        .order(4)
+
+        GridCol(){
+          Text('日出日落')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffb0bbef')
+        .span(4)
+        .order(5)
+
+        GridCol(){
+          Text('应用消息')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+
+        }
+        .width('100%')
+        .height(100)
+        .backgroundColor('#ffcbcfe9')
+        .span({
+          sm:4,
+          md:8,
+          lg:12,
+        })
+        .order(6)
+      }
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
